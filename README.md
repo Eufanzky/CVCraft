@@ -1,2 +1,2 @@
-# SVGCraft
-Generador de SVG's
+# CVCraft
+Generador de CVs
