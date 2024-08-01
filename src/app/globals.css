@@ -26,8 +26,19 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 } */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F2D1F7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

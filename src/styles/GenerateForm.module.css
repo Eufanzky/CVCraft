@@ -1,0 +1,11 @@
+.label-with-icon::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../public/arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px; /* Adjust the width to your desired icon size */
+  height: 24px; /* Adjust the height to your desired icon size */
+  margin-right: 8px; /* Adjust the spacing between the icon and the text */
+  vertical-align: middle; /* Align the icon vertically with the text */
+}
