@@ -25,16 +25,12 @@
 //   );
 // }
 
-import styles from "../styles/Home.module.css";
 import GenerateForm from "../components/GenerateForm";
 import ImagePreview from "../components/ImagePreview";
-import Image from "next/image";
-import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <div className="max-w-screen-lg w-full p-5 mx-auto">
         <GenerateForm />
         <div className="mt-2">
