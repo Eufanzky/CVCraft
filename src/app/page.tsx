@@ -28,6 +28,7 @@
 import GenerateForm from "../components/GenerateForm";
 import ImagePreview from "../components/ImagePreview";
 
+
 export default function Home() {
   return (
     <div>

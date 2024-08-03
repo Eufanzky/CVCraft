@@ -42,7 +42,7 @@ const mySchema = jsonSchema<{
 // Allow streaming responses up to 30 seconds
 // export const maxDuration = 30;
 
-export async function POST(req: Request) {
+export async function generateJSON(prompt: string) {
   // const { messages } = await req.json();
   // const result = await streamText({
   //   model: google("models/gemini-1.5-pro-latest"),
@@ -54,7 +54,7 @@ export async function POST(req: Request) {
     const { object } = await generateObject({
       model: google("models/gemini-1.5-pro-latest"),
       schema: mySchema,
-      prompt: "Create a recipe for a delicious cake",
+      prompt: prompt,
     });
     return NextResponse.json(object);
   } catch (error) {

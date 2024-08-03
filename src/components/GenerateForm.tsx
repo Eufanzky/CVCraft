@@ -1,8 +1,31 @@
+"use client";
+import { generateJSON } from "@/services/generateJSON";
 import styles from "../styles/GenerateForm.module.css";
+import { useState } from "react";
+
+import { useChat } from "ai/react";
 
 export default function GenerateForm() {
+  const [prompt, setPrompt] = useState("");
+  const [apiKey, setApiKey] = useState("");
+
+  const handleTextAreaChange = (e: any) => {
+    setPrompt(e.target.value);
+  };
+
+  const handleApiKeyChange = (e: any) => {
+    setApiKey(e.target.value);
+  };
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    // Call the generateJSON function with the prompt and apiKey
+    const result = await generateJSON(prompt);
+    console.log(result); // Handle the result as needed
+  };
+
   return (
-    <form className="text-center mb-10 px-52">
+    <form className="text-center mb-10 px-52" onSubmit={handleSubmit}>
       <div className="-mb-5 text-left">
         <svg
           width="44"
@@ -25,6 +48,8 @@ export default function GenerateForm() {
           type="password"
           className="w-full p-2 border border-black rounded focus:outline-none box-border bg-white bg-opacity-75 shadow-lg"
           placeholder="You API key"
+          value={apiKey}
+          onChange={handleApiKeyChange}
         />
       </div>
       <div className="mb-4 text-left">
@@ -48,6 +73,8 @@ export default function GenerateForm() {
         <textarea
           className="w-full p-2 border border-black rounded focus:outline-none box-border h-48 resize-none bg-white bg-opacity-75 shadow-lg"
           placeholder="Make a CV for a web developer with no experience..."
+          value={prompt}
+          onChange={handleTextAreaChange}
         />
       </div>
       <button
