@@ -34,11 +34,18 @@ body {
 } */
 body {
   font-family: Arial, sans-serif;
+<<<<<<< HEAD
   background-color: #f2d1f7;
+=======
+  background: linear-gradient(to bottom, #f2d1f7, #ffffff);
+>>>>>>> e7cfac58a118807bab51e0e3b44b753c88e3faa6
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   min-height: 100vh;
+=======
+>>>>>>> e7cfac58a118807bab51e0e3b44b753c88e3faa6
 }
