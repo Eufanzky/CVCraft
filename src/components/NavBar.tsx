@@ -12,9 +12,9 @@ const links = [
 const NavBar = () => {
   const pathname = usePathname()
   return (
-    <nav className="  w-full sticky top-0 z-20 bg-[#f2d1f7]/50 backdrop-blur-sm" >
+    <nav className="w-full sticky top-0 z-20 bg-[#f2d1f7]/50 backdrop-blur-sm" >
       <div className=' mx-auto max-w-5xl w-full flex justify-between items-center py-4 select-none' >
-        <span className='text-3xl font-bold' >CVCraft</span>
+        <span className='text-3xl font-extrabold' >CVCraft</span>
         <ul className="flex gap-8" >
           {
             links.map(link => (
@@ -27,7 +27,7 @@ const NavBar = () => {
             ))
           }
         </ul>
-        <div></div>
+        <div className='w-28'></div>
       </div>
     </nav>
   )
