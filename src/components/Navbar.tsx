@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="flex justify-between items-center p-4 bg-gray-800 text-white">
+    <nav className="w-full flex justify-between items-center p-4  text-blue-950">
       <div className="flex items-center">
         {/* Logo */}
-        <Image src="/CVCraft.png" alt="Logo" width={40} height={40} />
-        <span className="ml-2 text-xl font-bold">MyApp</span>
+        {/* <Image src="/CVCraft.png" alt="Logo" width={40} height={40} /> */}
+        <span className="ml-2 text-xl font-extrabold">CVCraft</span>
       </div>
 
       {/* Links */}
@@ -23,14 +23,14 @@ const Navbar: React.FC = () => {
         </a>
       </div>
 
-      {/* User Image */}
+      {/* User Image in acse we manage users*/}
       <div className="relative w-10 h-10">
-        <Image
+        {/* <Image
           src="/user.jpg" // Replace with your user image path
           alt="User"
           layout="fill"
           className="rounded-full"
-        />
+        /> */}
       </div>
     </nav>
   );
