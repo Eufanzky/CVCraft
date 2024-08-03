@@ -2,7 +2,7 @@ import styles from "../styles/GenerateForm.module.css";
 
 export default function GenerateForm() {
   return (
-    <form className="text-center">
+    <form className="text-center mb-10 px-52">
       <div className="-mb-5 text-left">
         <svg
           width="44"
