@@ -34,11 +34,11 @@ body {
 } */
 body {
   font-family: Arial, sans-serif;
-  background-color: #F2D1F7;
+  background-color: #f2d1f7;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
